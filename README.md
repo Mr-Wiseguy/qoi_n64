@@ -1,3 +1,11 @@
+This repo contains a modified version of the QOI reference implementation that targets 16-bit image data encoded as RGBA5551 (commonly referred to at RGBA16 in the N64 scene). It drops the QOI_OP_RGB operation and reduces the QOI_OP_RGBA operation to store the pixel data in RGBA5551 format.
+
+This modified implementation can be found in `qoi_rgba16.h`.
+
+The original QOI readme continues below:
+
+------------------------------------
+
 ![QOI Logo](https://qoiformat.org/qoi-logo.svg)
 
 # QOI - The “Quite OK Image Format” for fast, lossless image compression
