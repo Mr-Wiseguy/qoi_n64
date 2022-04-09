@@ -1,18 +1,11 @@
 /*
-
 Command line tool to convert between png <> qoi format
-
 Requires "stb_image.h" and "stb_image_write.h"
 Compile with: 
 	gcc qoiconv.c -std=c99 -O3 -o qoiconv
-
 Dominic Szablewski - https://phoboslab.org
-
-
 -- LICENSE: The MIT License(MIT)
-
 Copyright(c) 2021 Dominic Szablewski
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files(the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
@@ -28,7 +21,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 */
 
 
@@ -41,7 +33,7 @@ SOFTWARE.
 #include "stb_image_write.h"
 
 #define QOI_IMPLEMENTATION
-#include "qoi.h"
+#include "qoi_rgba16.h"
 
 
 #define STR_ENDS_WITH(S, E) (strcmp(S + strlen(S) - (sizeof(E)-1), E) == 0)
